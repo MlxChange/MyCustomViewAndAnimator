@@ -19,21 +19,13 @@
 		android:text="pathBezier"
 		android:onClick="pathBezier"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		tools:layout_editor_absoluteX="0dp"
-		android:layout_marginTop="8dp"
-		app:layout_constraintTop_toBottomOf="@+id/button"
-		tools:ignore="MissingConstraints"
-		android:id="@+id/button3"/>
+		android:layout_height="wrap_content"/>
 
 	<Button
-		android:id="@+id/button2"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="air"
-		android:layout_marginTop="8dp"
-		app:layout_constraintTop_toBottomOf="@+id/button3"
-		app:layout_constraintStart_toStartOf="parent"
+		android:onClick="air"
 		/>
 	<Button
 		android:text="Heart"

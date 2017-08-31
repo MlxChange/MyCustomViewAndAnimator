@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
     fun heart(v:View){
         startActivity(Intent(this, HeartActivity::class.java))
     }
+    fun air(v:View){
+        startActivity(Intent(this, AirActivity::class.java))
+    }
     fun AirRotate(v:View){
         startActivity(Intent(this, AirRotateActivity::class.java))
     }

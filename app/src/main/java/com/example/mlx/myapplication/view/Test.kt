@@ -15,15 +15,12 @@ open class Test @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        canvas?.translate(mwidth,mheight)
-
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
         mwidth=w.toFloat()/2
         mheight=h.toFloat()/2
-
     }
 
 }

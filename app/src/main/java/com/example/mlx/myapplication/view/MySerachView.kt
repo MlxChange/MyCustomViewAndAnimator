@@ -158,6 +158,7 @@ class MySerachView @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
+        canvas?.translate(mwidth,mheight)
         canvas?.drawColor(Color.RED)
         drawSearch(canvas)
     }

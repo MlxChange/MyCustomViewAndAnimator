@@ -3,6 +3,7 @@ package com.example.mlx.myapplication.view
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
+import android.view.View
 import com.example.mlx.myapplication.R
 
 /**
@@ -33,16 +34,11 @@ class MyAir @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        canvas!!.translate(mwidth, mheight)
-        canvas.scale(1f, -1f)
-        canvas.save()
+        canvas?.translate(mwidth,mheight)
+        canvas?.scale(1f, -1f)
+        canvas?.save()
         var p = Path()
-//        p.addCircle(0f,0f,100f,Path.Direction.CW)
-        p.lineTo(100f, 100f)
-        p.lineTo(300f, -200f)
-        p.quadTo(-150f, -70f, -240f, -130f)
-        p.lineTo(200f, -300f)
-        p.close()
+        p.addCircle(0f,0f,300f,Path.Direction.CW)
 
         mCurrentValue = mCurrentValue.plus(0.005f)
         if (mCurrentValue >= 1) {
@@ -57,8 +53,8 @@ class MyAir @JvmOverloads constructor(
         var degress = (Math.atan2(tan[1].toDouble(), tan[0].toDouble()) * 180.0 / Math.PI).toFloat()
         matrix?.postRotate(degress, (bitmap!!.width/2).toFloat(), (bitmap!!.height/2).toFloat())
         matrix?.postTranslate(pot[0]-bitmap!!.width/2,pot[1]-bitmap!!.height/2)
-        canvas.drawPath(p, mpaint)
-        canvas.drawBitmap(bitmap, matrix, mpaint)
+        canvas?.drawPath(p, mpaint)
+        canvas?.drawBitmap(bitmap, matrix, mpaint)
 
 
         invalidate()
