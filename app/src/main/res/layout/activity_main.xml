@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
@@ -12,18 +11,21 @@
 		android:text="Wave"
 		android:onClick="wave"
 		android:layout_width="match_parent"
+		android:textAllCaps="false"
 		android:layout_height="wrap_content"
 		android:id="@+id/button"/>
 
 	<Button
-		android:text="pathBezier"
+		android:text="PathBezier"
 		android:onClick="pathBezier"
+		android:textAllCaps="false"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>
 
 	<Button
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:textAllCaps="false"
 		android:text="air"
 		android:onClick="air"
 		/>
@@ -31,15 +33,18 @@
 		android:text="Heart"
 		android:onClick="heart"
 		android:layout_width="match_parent"
+		android:textAllCaps="false"
 		android:layout_height="wrap_content"/>
 	<Button
 		android:text="AirRotate"
 		android:onClick="AirRotate"
 		android:layout_width="match_parent"
+		android:textAllCaps="false"
 		android:layout_height="wrap_content"/>
 	<Button
 		android:text="SearchView"
 		android:onClick="SearchView"
+		android:textAllCaps="false"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>
 
