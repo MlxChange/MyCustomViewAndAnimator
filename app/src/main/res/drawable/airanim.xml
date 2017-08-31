@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:drawable="@drawable/ic_air"
+	>
+
+	<target
+		android:animation="@animator/air"
+		android:name="air"/>
+	<target
+		android:animation="@animator/air"
+		android:name="unair"/>
+
+</animated-vector>
