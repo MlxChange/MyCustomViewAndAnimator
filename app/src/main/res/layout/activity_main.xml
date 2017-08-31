@@ -40,5 +40,15 @@
 		android:onClick="heart"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>
+	<Button
+		android:text="AirRotate"
+		android:onClick="AirRotate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<Button
+		android:text="SearchView"
+		android:onClick="SearchView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
 
 </LinearLayout>

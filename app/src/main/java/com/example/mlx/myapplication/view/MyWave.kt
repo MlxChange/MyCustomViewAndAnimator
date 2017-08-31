@@ -11,7 +11,6 @@ import android.support.annotation.RequiresApi
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.LinearInterpolator
-import java.util.*
 
 /**
  * Created by MLX on 2017/8/21.
@@ -44,7 +43,6 @@ class MyWave @JvmOverloads constructor(
 
     var mCenterY=0f
 
-    var mWaveHeightTop=0f
     var mPaint:Paint?=null
     var mPath:Path?=null
 
@@ -66,7 +64,6 @@ class MyWave @JvmOverloads constructor(
         mValueAnimator?.repeatMode=ValueAnimator.RESTART
         mValueAnimator?.addUpdateListener{
             moffset= it.animatedValue as Float
-            mWaveHeightTop= (Random().nextInt(100)).toFloat()
             invalidate()
         }
         setOnClickListener(this)
@@ -86,7 +83,7 @@ class MyWave @JvmOverloads constructor(
         mPath?.moveTo((-mLength).toFloat()+moffset,mCenterY)
         for (i in 0..mCount){
             mPath?.quadTo((-mLength*3/4).toFloat()+i*mLength+moffset,mCenterY+60, (-mLength/2).toFloat()+i*mLength+moffset,mCenterY)
-            mPath?.quadTo((-mLength/4).toFloat()+i*mLength+moffset,mCenterY-60-mWaveHeightTop, (i*mLength).toFloat()+moffset,mCenterY)
+            mPath?.quadTo((-mLength/4).toFloat()+i*mLength+moffset,mCenterY-60, (i*mLength).toFloat()+moffset,mCenterY)
         }
         mPath?.lineTo(mScreenWidth.toFloat(), mScreenHeight.toFloat())
         mPath?.lineTo(0f, mScreenHeight.toFloat())

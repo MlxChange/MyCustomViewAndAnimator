@@ -16,9 +16,14 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
+		<activity android:name=".WaveActivity"/>
 		<activity android:name=".PathBezierActivity">
 		</activity>
 		<activity android:name=".HeartActivity">
+		</activity>
+		<activity android:name=".AirRotateActivity">
+		</activity>
+		<activity android:name=".SearchViewActivity">
 		</activity>
 	</application>
 
