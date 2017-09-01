@@ -1,6 +1,6 @@
 # MyCustomViewAndAnimator
 
-##这是一个自定义View的小Demo，每个Demo都有不同的知识点，可以一起学习
+## 这是一个自定义View的小Demo，每个Demo都有不同的知识点，可以一起学习
 
 ### Wave 自定义波浪
 <img src="https://github.com/MlxChange/MyCustomViewAndAnimator/blob/master/Screenshots/demo.gif" width="256px" height="400px" />
