@@ -3,7 +3,7 @@
 ##这是一个自定义View的小Demo，每个Demo都有不同的知识点，可以一起学习
 
 ### Wave 自定义波浪
-![image](http://github.com/MlxChange/MyCustomViewAndAnimator/blob/master/Screenshots/demo.gif)
+![img](http://github.com/MlxChange/MyCustomViewAndAnimator/blob/master/Screenshots/demo.gif)
 
 ### 路径贝塞尔曲线
 ![image]("http://github.com/MlxChange/MyCustomViewAndAnimator/blob/master/Screenshots/demo2.gif")
